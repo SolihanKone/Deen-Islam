@@ -1,0 +1,40 @@
+Deen Islam — App Store listing draft
+Use with iPhone screenshots (6.7" required). This build is iPhone-only, so iPad 12.9" shots are not required.
+
+Name: Deen Islam
+Subtitle (30 chars max): Quran, prayer times, qibla
+Category: Reference (secondary: Lifestyle)
+Age rating: 4+ (no unrestricted web, no violence)
+
+Promotional text (optional, 170 chars):
+Read the Quran, follow prayer times, and find qibla — offline-friendly worship tools in one simple app.
+
+Description:
+Deen Islam helps you stay connected to your deen throughout the day.
+
+Quran
+• Madinah-style mushaf pages and a learn-as-you-read surah view
+• Translations in English, Urdu, and French
+• Recitation audio and optional translation voice
+• Bookmarks and last-read page
+
+Prayer and qibla
+• Prayer times from your location
+• Optional local salah reminders (no account required)
+• Qibla compass
+
+Worship
+• Daily ayah, dua, and tasbeeh
+• 99 Names of Allah
+• Dark mode and Arabic, English, Urdu, or French app language
+
+Location is used only to calculate prayer times and qibla, and stays on your device. There are no ads and no account to create.
+
+Keywords (100 chars max, comma-separated):
+quran,prayer,qibla,salah,dua,tasbeeh,islam,muslim,mushaf,adhan
+
+Support URL:
+Host legal/privacy_policy.html (GitHub Pages, your site, etc.) and paste that HTTPS URL here and in Privacy Policy URL.
+
+Review notes:
+No login. Location is for prayer times and qibla only. Notifications are local salah reminders, off by default. Audio background mode is for Quran recitation with the screen locked. The app does not use or request the microphone.

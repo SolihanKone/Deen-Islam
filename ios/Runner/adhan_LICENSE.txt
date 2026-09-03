@@ -1,0 +1,9 @@
+Adhan notification clip
+-----------------------
+Source: Wikimedia Commons “Adhan wiki.oga”
+Author: Jarih
+License: Creative Commons Attribution-ShareAlike 3.0 Unported
+https://commons.wikimedia.org/wiki/File:Adhan_wiki.oga
+
+Converted to 22.05 kHz mono WAV for Android (`res/raw/adhan.wav`)
+and iOS (`Runner/adhan.wav`) notification playback (under 30 seconds).

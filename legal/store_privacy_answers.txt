@@ -1,0 +1,117 @@
+Deen Islam — copy these answers into App Store Connect and Google Play Console.
+
+Privacy policy file to host on HTTPS:
+  legal/privacy_policy.html
+  (same page also at docs/index.html for GitHub Pages)
+
+How to get a public HTTPS URL (required by both stores):
+  1. Create a GitHub repository for this project (or any static host).
+  2. In the repo, Settings → Pages → Source: Deploy from a branch → /docs.
+  3. The URL will look like:
+     https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/
+  4. Paste that URL in App Store Connect (App Privacy) and Play Console (Store listing + Data safety).
+
+================================================================
+Apple App Store Connect
+================================================================
+
+App name: Deen Islam
+Bundle ID: com.solihan.deenConnect
+SKU: deen-islam-ios
+Primary category: Lifestyle  (Books is also fine)
+Age rating: 4+  /  Made for Kids: No
+
+Export compliance:
+  Does your app use encryption?  Yes (HTTPS only)
+  Does your app qualify for exemption?  YES
+  Info.plist already has ITSAppUsesNonExemptEncryption = false
+  so Apple will not ask this on every upload.
+
+App Privacy (nutrition labels):
+  Data used to track you: None
+  Data linked to you: None
+
+  Data not linked to you:
+    • Precise Location
+        Purpose: App Functionality
+        Used for tracking: No
+        Linked to identity: No
+        Notes: Optional, while using the app, for prayer times and qibla.
+               Stored on device only. Not sent to our servers.
+
+    • Product Interaction (optional to declare)
+        Not collected.
+
+  Not collected:
+    Contact info, identifiers, purchases, health, financial, photos,
+    audio (microphone), browsing history, ads data.
+
+  Tracking: No
+  Third-party advertising: No
+  Privacy policy URL: (the GitHub Pages URL from above)
+
+Review notes (optional paste for App Review):
+  Deen Islam is a Quran, prayer times, qibla, duas, and tasbeeh companion.
+  Location is optional and used only for prayer times and qibla.
+  Notifications are local reminders, not push from a server.
+  The app does not record with the microphone.
+  Translation voices (Kokoro/Piper) are downloaded on device; store builds
+  do not include an API key.
+
+================================================================
+Google Play Console
+================================================================
+
+App name: Deen Islam
+Package name: com.deenconnect.deen_connect
+App category: Lifestyle
+Content rating: questionnaire → expected Everyone / PEGI 3
+Target audience: 18+ is not required; general audience.
+
+Store listing:
+  Short description (80 chars max):
+    Quran, prayer times, qibla, duas, and tasbeeh — on your phone.
+
+  Full description:
+    Deen Islam helps you read the Quran, follow daily prayer times,
+    find the qibla, keep a tasbeeh counter, and recite authentic duas.
+    Prayer times and qibla use your location only while you use the app.
+    Translation playback (English, French, Urdu) runs on your device
+    after a one-time voice download. No account. No ads.
+
+  Feature graphic: store/play_feature_graphic.png
+  App icon: generated from assets/branding/app_icon.png
+  Screenshots: capture from a real device (Home, Quran, Prayer, Duas)
+    and drop them in store/screenshots/. Play wants at least 2 phone shots.
+    App Store wants 6.7" iPhone screenshots from the latest device.
+
+Data safety form:
+  Does the app collect or share user data?  Yes (location on device)
+
+  Location → Approximate and Precise
+    Collected: Yes
+    Shared: No
+    Processed ephemerally: You may say Yes if you only keep last coords
+      on-device for prayer times (the app does store last coordinates locally).
+    Required or optional: Optional
+    Purposes: App functionality
+    Collection: On device only, not sent to the developer.
+
+  Notifications: local only — you can answer that you do not collect
+  notification data.
+
+  Microphone: Not collected. Not used.
+
+  Advertising: No
+  Data encryption in transit: Yes (HTTPS for recitation audio and
+    first-time voice-model downloads)
+  Users can request deletion: Yes — uninstalling the app removes local data.
+
+App signing:
+  android/upload-keystore.jks + android/key.properties (gitignored)
+  Back these up now. Losing the keystore means you cannot update the
+  Play listing.
+
+Release command (no secrets):
+  flutter build ipa
+  flutter build appbundle

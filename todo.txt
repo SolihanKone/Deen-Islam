@@ -1,0 +1,18 @@
+Achird, Algenib, Algieba,Alnilam(),
+
+1- on the dashboard, i want the next prayer name, time and the countdown 
+on the picture.
+
+2- In Prayer and Qible tiles sections, make the pages look nice, moderm add more
+stuff to it if possible
+
+3- on the read quran section, i want the play button at a botton bar which display
+play icon and undertext "Play", search icon with undertext "Search Surah". 
+Also add the translation icon and undertext "Translation". when tranlation is
+selected, every ayat should be translated. when play button is click and it's
+in tranlation mode, it should play in arabic and tranlation too. Use the gemini
+like it's been use in learn quran tile section. i want the same play bar in 
+learn quran tile section as well. and the line that seperate pages, i need it
+very bold, bigger and and more padding
+
+
